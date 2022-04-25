@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 
 public class Animal {
-	static public int totalAnimales;
+	static public int totalAnimales=0;
 	private String nombre;
 	private int edad;
 	private String habitat;
@@ -12,9 +12,9 @@ public class Animal {
 	private Zona zona;
 	
 	public Animal() {
-		totalAnimales++;}
+		totalAnimales=totalAnimales+1;}
 
-	public Animal(String nombre,int edad,String genero, String habitat) {
+	public Animal(String nombre,int edad, String habitat,String genero) {
 		totalAnimales++;
 		this.nombre=nombre;
 		this.edad=edad;

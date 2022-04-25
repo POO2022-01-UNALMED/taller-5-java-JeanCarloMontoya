@@ -9,6 +9,25 @@ public class Pez extends Animal{
 	
 	public String movimiento() {
 		return "nadar";}
+
+	public Pez(String nombre,int edad,String habitat,String genero,String colorEscamas,int cantidadAletas) {
+		super(nombre,edad,habitat,genero);
+		this.colorEscamas=colorEscamas;
+		this.cantidadAletas=cantidadAletas;
+		listado.add(this);}
+	public Pez() {
+		listado.add(this);}
+	
+	public void setColorEscamas(String colorEscamas) {
+		this.colorEscamas=colorEscamas;}
+	public String getColorEscamas() {
+		return colorEscamas;}
+	
+	
+	public void setCantidadAletas(int cantidadAletas) {
+		this.cantidadAletas=cantidadAletas;}
+	public int getCantidadAletas() {
+		return cantidadAletas;}
 	
 	public static Pez crearSalmon(String nombre,int edad, String genero) {
 		Pez p=new Pez();
