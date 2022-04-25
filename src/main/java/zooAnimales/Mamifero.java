@@ -15,7 +15,7 @@ public class Mamifero extends Animal {
 	public Mamifero() {
 		listado.add(this);}
 	
-	public void setListado(ArrayList<Mamifero> listado) {
+	public  void setListado(ArrayList<Mamifero> listado) {
 		this.listado=listado;}
 	public static ArrayList<Mamifero> getListado(){
 		return listado;}

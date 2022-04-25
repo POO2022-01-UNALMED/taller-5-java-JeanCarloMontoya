@@ -28,6 +28,8 @@ public class Reptil extends Animal {
 	
 	public void setListado(ArrayList<Reptil> listado) {
 		this.listado=listado;}
+	public static ArrayList<Reptil> getListado(){
+		return listado;}
 	
 	public static Reptil crearIguana(String nombre,int edad, String genero) {
 		Reptil r=new Reptil();

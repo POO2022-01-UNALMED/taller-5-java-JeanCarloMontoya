@@ -9,6 +9,11 @@ public class Pez extends Animal{
 	
 	public String movimiento() {
 		return "nadar";}
+	
+	public void setListado(ArrayList<Pez> listado) {
+		this.listado=listado;}
+	public static ArrayList<Pez> getListado(){
+		return listado;}
 
 	public Pez(String nombre,int edad,String habitat,String genero,String colorEscamas,int cantidadAletas) {
 		super(nombre,edad,habitat,genero);

@@ -51,19 +51,22 @@ public class Animal {
 	
 	
 	public String toString() {
-		return "Mi nombre es "+nombre+", tengo una edad de "+edad+", habito en "+habitat+" y mi genero es"+genero+
-				", la zona en la que me ubico es "+zona+", en el ";
+		if (this.zona==null) {
+			return "Mi nombre es "+nombre+", tengo una edad de "+edad+", habito en "+habitat+" y mi genero es "+genero
+				;}
 				
+		return "Mi nombre es "+nombre+", tengo una edad de "+edad+", habito en "+habitat+" y mi genero es "+genero+
+				", la zona en la que me ubico es "+zona+", en el "+ zona.getZoo();
 	}
 	public String movimiento() {
 		return "desplazarse";}
 	
 	public static String totalPorTipo() {
 		return "Mamiferos: "+ (Mamifero.getListado().size())+"\n"+
-				"Aves: "+(Ave.halcones+Ave.aguilas)+"\n"+
-				"Reptiles: "+(Reptil.iguanas+Reptil.serpientes)+"\n"+
-				"Peces: "+(Pez.bacalaos+Pez.salmones)+"\n"+
-				"Anfibios: "+(Anfibio.ranas+Anfibio.salamandras);
+				"Aves: "+(Ave.getListado().size())+"\n"+
+				"Reptiles: "+(Reptil.getListado().size())+"\n"+
+				"Peces: "+(Pez.getListado().size())+"\n"+
+				"Anfibios: "+(Anfibio.getListado().size());
 				
 	
 	}

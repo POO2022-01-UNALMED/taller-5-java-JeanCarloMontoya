@@ -9,7 +9,7 @@ public class Ave extends Animal {
 	
 	public void setListado(ArrayList<Ave> listado) {
 		this.listado=listado;}
-	public ArrayList<Ave> getListado(){
+	public  static ArrayList<Ave>  getListado(){
 		return listado;}
 	
 	public Ave(String nombre,int edad,String habitat,String genero,String colorPlumas) {
