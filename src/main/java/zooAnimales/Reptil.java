@@ -50,7 +50,7 @@ public class Reptil extends Animal {
 	public String movimiento() {
 		return "reptar";
 	}
-	public int cantidadReptiles(){
+	public static int cantidadReptiles(){
 		return serpientes+iguanas;}
 
 }
