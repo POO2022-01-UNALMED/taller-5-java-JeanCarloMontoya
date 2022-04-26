@@ -44,7 +44,7 @@ public class Ave extends Animal {
 		return a;}
 	
 	
-	public int cantidadAves() {
+	public static int cantidadAves() {
 		return halcones+aguilas;}
 	
 	public String movimiento() {
