@@ -50,7 +50,7 @@ public class Pez extends Animal{
 		listado.add(p);
 		return p;}
 	
-	public int cantidadAves() {
+	public static int cantidadAves() {
 		return salmones+bacalaos;}
 
 }
